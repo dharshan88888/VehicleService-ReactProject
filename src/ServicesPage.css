@@ -1,0 +1,87 @@
+/* ServicesPage.css */
+.services-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-left: 10%; /* Add some space between content and image */
+    border-radius: 8px;
+    width: 60%; /* Adjust width as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.next-button:hover {
+    transform: scale(1.05);
+}
+
+.next-button:active {
+    transform: scale(0.95);
+}
+
+/* Ripple Effect */
+.next-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    padding-top: 300%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.next-button:active::before {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0s;
+}
+
+.service-image {
+    width: 30%; /* Adjust width as needed */
+}
+
+.service-image img {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

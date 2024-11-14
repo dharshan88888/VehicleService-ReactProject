@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002f6c;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .navbar .account {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .navbar .location {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .location span {
+    margin-right: 5px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #001e3e;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .search-bar {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar input {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Car Brands Section */
+  .brands-section {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .brands-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .brands-section .brands-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .brands-list img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .brands-list img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #001e3e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
